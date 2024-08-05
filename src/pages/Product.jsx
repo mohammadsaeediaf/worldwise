@@ -1,22 +1,11 @@
 import { Link } from "react-router-dom";
+import PageNav from "../components/PageNav";
 
 function product() {
   return (
     <div>
+      <PageNav />
       <h1>Product</h1>
-      <ul>
-        <li>
-          <Link to="/"> Home</Link>
-        </li>
-
-        <li>
-          <Link to="/product">Product</Link>
-        </li>
-
-        <li>
-          <Link to="/pricing">Pricing</Link>
-        </li>
-      </ul>
     </div>
   );
 }

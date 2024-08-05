@@ -1,22 +1,15 @@
 import { Link, NavLink } from "react-router-dom";
+import PageNav from "../components/PageNav";
+import AppLayout from "./AppLayout";
 
 function homePage() {
   return (
     <div>
+      <PageNav />
       <h1>WorldWise!</h1>
-      <ul>
-        <li>
-          <NavLink to="/"> Home</NavLink>
-        </li>
-
-        <li>
-          <NavLink to="/product">Product</NavLink>
-        </li>
-
-        <li>
-          <NavLink to="/pricing">Pricing</NavLink>
-        </li>
-      </ul>
+      <Link to="/app" element={<AppLayout />}>
+        Go to the app
+      </Link>
     </div>
   );
 }
