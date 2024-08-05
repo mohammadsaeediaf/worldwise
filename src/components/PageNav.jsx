@@ -1,9 +1,8 @@
 import { Link } from "react-router-dom";
 
-function product() {
+function PageNav() {
   return (
-    <div>
-      <h1>Product</h1>
+    <nav>
       <ul>
         <li>
           <Link to="/"> Home</Link>
@@ -17,8 +16,8 @@ function product() {
           <Link to="/pricing">Pricing</Link>
         </li>
       </ul>
-    </div>
+    </nav>
   );
 }
 
-export default product;
+export default PageNav;
